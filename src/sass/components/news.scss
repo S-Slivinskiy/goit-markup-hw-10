@@ -1,0 +1,78 @@
+.news {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: $background-color;
+  padding-bottom: 100px;
+}
+.blog {
+  display: flex;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0 auto;
+}
+.blog__img {
+  width: 350px;
+  margin-bottom: 15px;
+}
+.blog__header {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: $other-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-color;
+  &::after {
+    display: block;
+    height: 3px;
+    width: 136px;
+    content: '';
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-image: url(../images/icon/blog-line.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.blog__text {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: $other-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-color;
+}
+.blog__list {
+  margin-right: 30px;
+  list-style-type: none;
+  display: inline-block;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.blog__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  color: $gallery-text-color;
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: $green-blog-blog-and-focus;
+  transition: background-color 250ms $timing-fn;
+  &:hover,
+  &:focus {
+    background-color: $green-choice-price;
+  }
+}

@@ -1,0 +1,83 @@
+.footer__overley {
+  background-image: url(../images/icon/footer-baner.jpg);
+  height: 465px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+}
+@media screen and (min-resolution: 2dppx) {
+  .footer__overley {
+    background-image: url(../images/footer-baner@2x.jpg);
+  }
+}
+.footer__header {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 100px;
+  width: 1110px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $main-font;
+  font-size: 48px;
+  color: $text-color;
+  &::after {
+    display: block;
+    height: 15px;
+    width: 165px;
+    content: '';
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url(../images/icon/line-wight.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.footer__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  font-family: $other-font;
+  font-size: 16px;
+  text-align: center;
+  color: $gallery-text-color;
+}
+.footer__mail-enter {
+  display: flex;
+  justify-content: center;
+  width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__input {
+  width: 445px;
+  height: 60px;
+  padding-left: 30px;
+  border-radius: 5px 0 0 5px;
+  border-style: none;
+  font-family: $other-font;
+}
+.footer__button {
+  width: 95px;
+  height: 60px;
+  border: 5px;
+  right: 0;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid #ffffff;
+  background-color: $green-blog-blog-and-focus;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 250ms $timing-fn;
+  &:hover,
+  &:focus {
+    background-color: $green-choice-price;
+  }
+}
+.footer__button--icon {
+  width: 77px;
+  height: 53px;
+  fill: $gallery-text-color;
+}

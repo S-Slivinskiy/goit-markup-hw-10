@@ -1,0 +1,63 @@
+.about {
+  margin: auto;
+  width: 1110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__item--setting {
+  width: 50px;
+  height: 50px;
+  fill: $green-choice-and-top-line;
+}
+
+.about__item--money-back {
+  width: 50px;
+  height: 50px;
+  fill: $green-choice-and-top-line;
+}
+
+.about__item--shipping {
+  width: 50px;
+  height: 50px;
+  fill: $green-choice-and-top-line;
+}
+
+.about__item--shipping-two {
+  width: 50px;
+  height: 50px;
+  fill: $green-choice-and-top-line;
+}
+.about__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1110px;
+  justify-content: space-between;
+}
+
+.about__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  list-style-type: none;
+  width: 255px;
+  font-family: $other-font;
+  color: $text-color;
+  font-size: 18px;
+  text-align: center;
+}
+
+.about__headline {
+  margin: 0;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 30px;
+}
+.about__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 30px;
+}

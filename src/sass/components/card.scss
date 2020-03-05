@@ -1,0 +1,196 @@
+.card {
+  margin: 0;
+  padding: 0;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__icon {
+  background-color: transparent;
+  transition: background-color 250ms $timing-fn;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:nth-child(4n) {
+    width: 164px;
+  }
+}
+.card__icon--like {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  fill: $gallery-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $green-choice-and-top-line;
+    cursor: pointer;
+  }
+}
+.card__icon--share {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  fill: $gallery-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $green-choice-and-top-line;
+    cursor: pointer;
+  }
+}
+.card__icon--clock {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  fill: $gallery-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $green-choice-and-top-line;
+    cursor: pointer;
+  }
+}
+.card__icon--cart {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  fill: $gallery-text-color;
+}
+
+.card__icon--text {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: $other-font;
+  font-size: 14px;
+  color: $gallery-text-color;
+}
+.card__list {
+  list-style-type: none;
+}
+.card__list {
+  display: flex;
+  overflow: hidden;
+}
+.card__list a {
+  color: $gallery-text-color;
+}
+.card__list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
+  }
+}
+
+.card__link {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  width: 255px;
+  height: 320px;
+  align-items: flex-end;
+
+  &:hover .card__header {
+    background-color: $green-choice-and-top-line;
+  }
+  &:hover .card__price {
+    background-color: $green-choice-price;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 234px;
+    height: 266px;
+    top: 6px;
+    left: 11px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(110%);
+    transition: transform 250ms $timing-fn;
+  }
+  &:hover .card__actions {
+    display: flex;
+    opacity: 1;
+  }
+  &:hover::before {
+    display: block;
+    transform: translateY(0);
+  }
+}
+
+.card__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: $dark-gray;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  transition: background-color 250ms $timing-fn;
+}
+.card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: $other-green;
+  width: 55px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  transition: background-color 250ms $timing-fn;
+}
+
+.card__img {
+  width: 255px;
+}
+
+.card__actions {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  justify-content: space-between;
+  align-items: inherit;
+  flex-wrap: wrap;
+  width: 164px;
+  height: 114px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opasity 250ms $timing-fn 250ms;
+}
+.card__icon {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $gallery-text-color;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  &:nth-child(4n):hover,
+  &:nth-child(4n):focus {
+    background-color: $dark-gray;
+    cursor: pointer;
+  }
+}

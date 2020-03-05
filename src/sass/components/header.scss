@@ -1,0 +1,84 @@
+.head {
+  display: block;
+  justify-content: space-between;
+}
+.head__user-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: $green-choice-and-top-line;
+}
+.user-menu {
+  display: flex;
+  width: 1110px;
+  margin: auto;
+  justify-content: space-between;
+}
+.user-menu__connect {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.user-menu__call {
+  text-decoration: none;
+  color: $gallery-text-color;
+  font-size: 14px;
+  font-family: $other-font;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+.user-menu__mail {
+  text-decoration: none;
+  color: $gallery-text-color;
+  font-size: 14px;
+  font-family: $other-font;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+.user-menu__connect-link {
+  display: inline-flex;
+  padding-right: 15px;
+  align-items: center;
+}
+.user-menu__phone-icon {
+  width: 36px;
+  height: 18px;
+  fill: $gallery-text-color;
+}
+.user-menu__mail-icon {
+  width: 36px;
+  height: 18px;
+  fill: $gallery-text-color;
+}
+
+.user-menu__nav {
+  margin: 0px;
+  padding: 0px;
+  width: 425px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-menu__item {
+  list-style-type: none;
+}
+.user-menu__link {
+  text-decoration: none;
+  color: $gallery-text-color;
+  font-family: $other-font;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

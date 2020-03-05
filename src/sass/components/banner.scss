@@ -1,0 +1,68 @@
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/top-baner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/top-baner@2x.jpg);
+  }
+}
+.banner__content {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner__content p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 48px;
+  line-height: normal;
+  color: $gallery-text-color;
+}
+.banner__text-lite {
+  margin: 0;
+  font-weight: 300;
+}
+.banner__text-bold {
+  margin: 0;
+  font-weight: 400;
+}
+.banner__content span {
+  color: $green-choice-and-top-line;
+}
+.banner__link {
+  color: $gallery-text-color;
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: $green-blog-blog-and-focus;
+  transition: background-color 250ms $timing-fn;
+}
+.banner__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $green-choice-price;
+  }
+}
